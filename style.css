@@ -1,0 +1,358 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100%;
+    padding: 20px 40px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar h2{
+    color: white;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+.home{
+    height: 100vh;
+    background-image:white
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.home-content{
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+.home-content h1{
+    font-size: 60px;
+    text-shadow: 2px 2px 8px black;
+}
+.home-content p{
+    font-size: 20px;
+    margin: 20px;
+    text-shadow: 1px 1px 5px black;
+}
+.home-content a{
+    background-color: white;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.destination{
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+.destination h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.destination-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.destination-box{
+    width: 280px;
+    padding: 35px 25px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.destination-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.destination-box h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.destination-box p{
+    font-size: 16px;
+}
+.destination-box img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: block;
+}
+.beaches{
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #dff6ff;
+}
+.beaches h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.beach-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.beach-box{
+    width: 280px;
+    padding: 35px 25pzx;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.beach-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.beach-box h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.beach-box p{
+    font-size: 16px;
+}
+.beach-box img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: block;
+}
+.cities{
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff3e0;
+}
+.cities h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.city-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap:nowrap ;
+}
+.city-box{
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.city-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.city-box h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.city-box p{
+    font-size: 16px;
+}
+.city-box img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: block;
+}
+.about{
+    min-height: 70vh;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fcee4ec;
+}
+.about h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.about p{
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.contact{
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e8f5e9;
+}
+.contact h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact >p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.contact-box{
+    width: 350px;
+    max-width: 90%;
+    margin:auto ;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-box h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact-box p{
+    font-size: 10px;
+}
+.contact-box a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    font-size: 16px;
+}
+.top-button{
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.top-button:hover{
+    background-color: gray;
+}
+
+.destination-box img,.beach-box img,.city-box img{
+    transition: 0.3s;
+}
+.destination-box:hover img,.beach-box:hover img,.city-box:hover img{
+    transform: scale(1.05);
+}
+@media(max-width: 768px){
+    .navbar{
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar ul{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .home-content h1{
+        font-size: 40px;
+    }
+    .home-content p{
+        font-size: 16px;
+    }
+    .destination-container,.beach-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .destination-box,.beach-box{
+        width: 90%;
+        max-width: 350px;
+    }
+    .city-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .city-box{
+        width: 90%;
+        max-width: 350px;
+    }
+    .contact-box{
+        width: 90%;
+    }
+}
+.contact-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}  
+.contact-box input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}  
+.contact-box button{
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact-box button:hover{
+    background-color: gray;
+}
+.contact-box select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.contact-box label{
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
